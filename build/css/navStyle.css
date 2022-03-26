@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #1b1a17;
+  font-family: "Rubik", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-wrapper {
+  font-weight: bold;
+  height: 50px;
+  width: 100%;
+  background-color: #f0a500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-wrapper .nav-left {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.nav-wrapper .nav-left div {
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: all linear 0.2s;
+}
+.nav-wrapper .nav-left div a {
+  color: #1b1a17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-wrapper .nav-left div a i {
+  font-size: 24px;
+}
+.nav-wrapper .nav-left div:hover {
+  background-color: #e6d5b8;
+}
+.nav-wrapper .nav-right {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.nav-wrapper .nav-right div {
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: all linear 0.2s;
+  margin-right: 20px;
+}
+.nav-wrapper .nav-right div a {
+  color: #1b1a17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-wrapper .nav-right div a i {
+  font-size: 24px;
+}
+.nav-wrapper .nav-right div:hover {
+  background-color: #e6d5b8;
+}

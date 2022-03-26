@@ -1,0 +1,65 @@
+@import "./valuable.scss";
+@import "./cssReset.scss";
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin navItem {
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: all linear 0.2s;
+
+  a {
+    color: $bg-color;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 24px;
+    }
+  }
+
+  &:hover {
+    background-color: $bg-item-hover-color;
+  }
+}
+
+@mixin navLayout {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper {
+  font-weight: bold;
+
+  height: 50px;
+  width: 100%;
+  background-color: $nav-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .nav-left {
+    @include navLayout();
+    div {
+      @include navItem();
+    }
+  }
+  .nav-right {
+    @include navLayout();
+    margin-right: 30px;
+
+    div {
+      @include navItem();
+      margin-right: 20px;
+    }
+  }
+}
